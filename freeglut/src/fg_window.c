@@ -158,7 +158,7 @@ void fgCloseWindow( SFG_Window* window )
     if (fgStructure.GameModeWindow != NULL && fgStructure.GameModeWindow->ID==window->ID)
         glutLeaveGameMode();
 
-	fgPlatformCloseWindow ( window );
+    fgPlatformCloseWindow ( window );
 }
 
 
