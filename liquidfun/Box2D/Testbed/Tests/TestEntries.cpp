@@ -101,9 +101,11 @@
 #include "Sparky.h"
 #include "WaveMachine.h"
 #include "BodyTest.h"
+#include "FixtureTest.h"
 
 TestEntry g_testEntries[] =
 {
+    {"Fixture Test", FixtureTest::Create},
     {"Body Test", BodyTest::Create},
 	{"Sandbox", Sandbox::Create},
 	{"Sparky", Sparky::Create},
