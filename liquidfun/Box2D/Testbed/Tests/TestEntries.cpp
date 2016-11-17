@@ -102,9 +102,11 @@
 #include "WaveMachine.h"
 #include "BodyTest.h"
 #include "FixtureTest.h"
+#include "FrictionTest.h"
 
 TestEntry g_testEntries[] =
 {
+    {"Friction Test", FrictionTest::Create},
     {"Fixture Test", FixtureTest::Create},
     {"Body Test", BodyTest::Create},
 	{"Sandbox", Sandbox::Create},
