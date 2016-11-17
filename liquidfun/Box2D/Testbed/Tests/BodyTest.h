@@ -1,10 +1,10 @@
-#ifndef FOOTEST_H
-#define FOOTEST_H
+#ifndef BODYTEST_H
+#define BODYTEST_H
 
 #define DEGTORAD 0.0174532925199432957f
 #define RADTODEG 57.295779513082320876f
 
-class FooTest : public Test
+class BodyTest : public Test
 {
   protected:
     b2Body* dynamicBody;
@@ -12,7 +12,7 @@ class FooTest : public Test
     b2Body* kinematicBody;
 
   public:
-    FooTest()
+    BodyTest()
     {
         b2BodyDef myBodyDef;
         myBodyDef.type = b2_dynamicBody; // this will be a dynmic body
@@ -55,10 +55,6 @@ class FooTest : public Test
         //run the default physics and rendering
         Test::Step(settings);
 
-        // show some text in the main scree
-        m_debugDraw.DrawString(5, m_textLine, "Now we have a foo test");
-        m_textLine += 15;
-
         b2Vec2 pos = dynamicBody->GetPosition();
         float angle = dynamicBody->GetAngle();
         b2Vec2 vel = dynamicBody->GetLinearVelocity();
@@ -78,7 +74,7 @@ class FooTest : public Test
 
     static Test* Create()
     {
-        return new FooTest;
+        return new BodyTest;
     }
 };
 

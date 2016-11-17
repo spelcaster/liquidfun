@@ -100,11 +100,11 @@
 #include "SoupStirrer.h"
 #include "Sparky.h"
 #include "WaveMachine.h"
-#include "FooTest.h"
+#include "BodyTest.h"
 
 TestEntry g_testEntries[] =
 {
-    {"Foo Test", FooTest::Create},
+    {"Body Test", BodyTest::Create},
 	{"Sandbox", Sandbox::Create},
 	{"Sparky", Sparky::Create},
 	{"DamBreak", DamBreak::Create},
