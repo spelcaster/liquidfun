@@ -103,9 +103,11 @@
 #include "BodyTest.h"
 #include "FixtureTest.h"
 #include "FrictionTest.h"
+#include "ForceImpulseTest.h"
 
 TestEntry g_testEntries[] =
 {
+    {"Force and Impulse Test", ForceImpulseTest::Create},
     {"Friction Test", FrictionTest::Create},
     {"Fixture Test", FixtureTest::Create},
     {"Body Test", BodyTest::Create},
